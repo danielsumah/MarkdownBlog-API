@@ -1,0 +1,37 @@
+
+###send login request
+
+POST http://127.0.0.1:8000/dj-rest-auth/login/
+Content-Type: application/json
+
+{
+    "username": "admin",
+    "email": "danielsumah@gmail.com",
+    "password": "admin"
+}
+
+
+
+###send registration request
+POST http://127.0.0.1:8000/dj-rest-auth/registration/
+Content-Type: application/json
+
+{
+    "username": "testuser",
+    "email": "testuser@gmail.com",
+    "password1": "iamthetestuser1",
+    "password2": "iamthetestuser1"
+   
+}
+
+###send registration request
+POST http://127.0.0.1:8000/dj-rest-auth/registration/
+Content-Type: application/json
+
+{
+    "username": "lemonboy",
+    "email": "lemonboy@gmail.com",
+    "password1": "iamthelemonboy1",
+    "password2": "iamthelemonboy1"
+    
+}
