@@ -35,3 +35,7 @@ Content-Type: application/json
     "password2": "iamthelemonboy1"
     
 }
+
+### test posts fetching
+GET  http://127.0.0.1:8000/api/posts/
+Content-Type: application/json
