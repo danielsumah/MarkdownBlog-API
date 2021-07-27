@@ -36,3 +36,9 @@ class PostUpdateView(generics.UpdateAPIView):
     serializer_class = PostUpdateSerializer
     queryset = Post.objects.all()
     lookup_field = 'slug'
+
+
+class PostDeleteView(generics.DestroyAPIView):
+    permission_classes = [permissions.AllowAny]
+    queryset = Post.objects.all()
+    lookup_field = 'slug'
