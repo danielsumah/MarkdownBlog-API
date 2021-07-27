@@ -10,6 +10,8 @@ Content-Type: application/json
     "password": "admin"
 }
 
+### logout
+
 
 
 ###send registration request
@@ -38,4 +40,8 @@ Content-Type: application/json
 
 ### test posts fetching
 GET  http://127.0.0.1:8000/api/posts/
+Content-Type: application/json
+
+### create post
+POST http://127.0.0.1:8000/api/post/create/
 Content-Type: application/json
