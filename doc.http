@@ -1,6 +1,9 @@
 
-###send login request
+###Get User
+POST http://127.0.0.1:8000/dj-rest-auth/user/
 
+
+###send login request
 POST http://127.0.0.1:8000/dj-rest-auth/login/
 Content-Type: application/json
 
@@ -45,3 +48,4 @@ Content-Type: application/json
 ### create post
 POST http://127.0.0.1:8000/api/post/create/
 Content-Type: application/json
+

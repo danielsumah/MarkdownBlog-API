@@ -10,6 +10,9 @@ django-cors-headers = "*"
 dj-rest-auth = "*"
 django-allauth = "*"
 pillow = "*"
+django-heroku = "*"
+gunicorn = "*"
+whitenoise = "*"
 
 [dev-packages]
 autopep8 = "*"

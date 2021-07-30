@@ -1,10 +1,14 @@
-from django.contrib.auth import get_backends
+from django.contrib.auth.models import User
 from django.shortcuts import render
 from rest_framework import generics, permissions
 from .models import Post
 from .serializers import *
 from .permissions import IsAuthor
+
 # Create your views here.
+
+
+# def getUserView(request):
 
 
 class PostListView(generics.ListAPIView):
