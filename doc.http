@@ -41,9 +41,27 @@ Content-Type: application/json
     
 }
 
+
+###send registration request
+POST https://write-blog-api.herokuapp.com/dj-rest-auth/registration/
+Content-Type: application/json
+
+{
+    "username": "lemonboy2",
+    "email": "lemonboy@gmail.com2",
+    "password1": "iamthelemonboy1",
+    "password2": "iamthelemonboy1"
+    
+}
+
 ### test posts fetching
 GET  http://127.0.0.1:8000/api/posts/
 Content-Type: application/json
+
+### test posts fetching
+GET  https://write-blog-api.herokuapp.com/api/posts/
+Content-Type: application/json
+
 
 ### create post
 POST http://127.0.0.1:8000/api/post/create/
