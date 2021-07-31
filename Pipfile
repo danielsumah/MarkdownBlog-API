@@ -12,6 +12,7 @@ django-allauth = "*"
 pillow = "*"
 django-heroku = "*"
 gunicorn = "*"
+whitenoise = "*"
 
 [dev-packages]
 autopep8 = "*"
