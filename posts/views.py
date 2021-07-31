@@ -8,7 +8,8 @@ from .permissions import IsAuthor
 # Create your views here.
 
 
-# def getUserView(request):
+def home_view(request): 
+    return render(request, 'posts/index.html')
 
 
 class PostListView(generics.ListAPIView):

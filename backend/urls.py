@@ -10,7 +10,7 @@ urlpatterns = [
     path('dj-rest-auth/registration/', include('dj_rest_auth.registration.urls')),
     # path('accounts/', include('allauth.urls')),
 
-    path('api/', include('posts.urls')),
+    path('', include('posts.urls')),
 ]
 
 # if settings.DEBUG:
