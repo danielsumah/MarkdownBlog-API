@@ -175,7 +175,7 @@ EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 
 CORS_ALLOWED_ORIGINS = [
     # "https://example.com",
-    # "https://sub.example.com",
+    "https://frosty-montalcini-006e6b.netlify.app",
 
     # below is the react dev server
     "http://localhost:3000",
