@@ -13,8 +13,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-=9i%p12yj2wjjz1kq0$_@4wsu2@3_m$o!2_bkwyp7y)qoyg-c@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = True
-DEBUG = False
+DEBUG = True
+# DEBUG = False
 
 ALLOWED_HOSTS = [
     "write-blog-api.herokuapp.com",
@@ -52,6 +52,8 @@ INSTALLED_APPS = [
 
 
     'posts',
+
+    'storages',
 ]
 
 MIDDLEWARE = [
@@ -186,3 +188,29 @@ CORS_ALLOWED_ORIGINS = [
 
 # Configure Django App for Heroku.
 django_heroku.settings(locals())
+
+
+# S3 BUCKETS CONFIG
+
+AWS_ACCESS_KEY_ID = 'AKIAUP6IVWILI5LQZZHD'
+AWS_SECRET_ACCESS_KEY = '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'
+AWS_STORAGE_BUCKET_NAME = 'write-blog-bucket'
+AWS_S3_FILE_OVERWRITE = False
+AWS_DEFAULT_ACL = None
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+
+
+''' #S3 configuration in json
+{
+   "CORSRule": {
+      "AllowedOrigin": "*",
+      "AllowedMethod": [
+         "GET",
+         "POST",
+         "PUT"
+      ],
+      "AllowedHeader": "*"
+   }
+}
+'''
